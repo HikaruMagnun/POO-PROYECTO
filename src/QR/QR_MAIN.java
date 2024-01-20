@@ -1,6 +1,5 @@
 package QR;
 
-
 import com.google.zxing.WriterException;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -31,18 +30,18 @@ public class QR_MAIN {
                 BufferedWriter writer = new BufferedWriter(wr);
                 writer.write("A0307");
                 writer.newLine();
-                writer.write("5"); 
+                writer.write("5");
                 writer.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-         QR_VIEW QR = new QR_VIEW();
-         QR.setVisible(true);
-         QR.setLocationRelativeTo(null);
-         QR.GENERADOR();
-       
-         
+        QR_VIEW QR = new QR_VIEW();
+        QR.setVisible(true);
+        QR.setLocationRelativeTo(null);
+        QR.GENERADOR();
+
+        // test
     }
-    
+
 }
